@@ -1,0 +1,142 @@
+:root {
+        --colorHeading: rgb(255, 89, 89);
+        --navBorderColor: rgb(175, 0, 0);
+        --headingBackgroundColor: rgb(255, 208, 107);
+        --menuItemBackgroundColor: rgb(247, 232, 151);
+}
+@font-face {
+  font-family: "italianCursive";
+  src: 
+    url(./fonts/Italian\ Cursive\,\ 14th\ c.TTF) format("opentype");
+    font-size: 600;
+    font-style: normal;
+}
+@font-face {
+        font-family: "italianMenu";
+        src:
+          url(./fonts/Italianno-Regular.ttf) format("opentype");
+        font-style: normal;
+}
+
+* {
+        box-sizing: border-box;
+}
+body, html {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+}
+body {
+        background: linear-gradient(rgb(155, 13, 13), rgb(134, 12, 42));
+}
+header {
+        margin: 2vh;
+        background-color: rgba(128, 0, 21, 0.568);
+}
+nav {
+        display: flex;
+        justify-content: center;        
+}
+.navItem {
+        border: 2px solid var(--navBorderColor);
+        border-radius:  8px;
+        padding: 0.6rem 1.7rem;
+        margin: 0.6rem 0.7rem;
+        background-color: var(--menuItemBackgroundColor);
+        font-family: italianMenu;
+        font-size: 1.7rem;
+}
+#content {
+        display: flex;
+        justify-content: center;
+     
+}
+#landerPage, #contactPage {
+        min-width: 230px;
+        max-width: 510px;
+        background-color: var(--headingBackgroundColor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 6px;
+}
+.landerHeading, .contactHeading {
+        padding-top: 1.5rem;
+        margin: 0;
+}
+.landerText, .contactText {
+        margin-top: 1.5rem;
+        font-size: 1.9rem;
+        font-family: italianMenu;
+        width: 70%;
+}
+.contentHeading {
+        background-color: var(--headingBackgroundColor);
+        border-radius: 15px;
+        border: 5px solid rgb(192, 13, 0);
+
+        display: flex;
+       
+}
+/*      #restaurantHeadingLogo {
+        max-width: 50vw;
+        background-color: rgb(255, 208, 107);
+        border-radius: 50%;
+        padding: 0.2rem;
+} */
+h1, h2 {
+        font-family: 'italianCursive', Arial, Helvetica, sans-serif;
+        background: linear-gradient(rgb(217, 219, 68), rgb(217, 1, 1));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+}
+h2 { font-size: 2rem; }
+
+
+
+/* Menu page */
+#menuPage {
+        min-width: 230px;
+        max-width: 510px;
+        padding: 2vh;
+        background-color: rgba(128, 0, 21, 0.568);
+        border: 2px solid black;
+        border-radius: 9px;
+        box-shadow: 0px 3px 4px rgb(88, 5, 5);
+}
+.menuItem {
+        background-color: var(--menuItemBackgroundColor);
+        display: grid;
+        grid-template-columns: 1fr 10vh;
+        grid-template-rows: repeat(3, min-content);
+        border: 1px solid black;
+        border-radius: 8px;
+        margin: 2rem 0 2rem 0;
+        padding: 1.3rem;
+        padding-bottom: 0.8rem;
+        font-family: 'italianMenu', mono;
+        font-size: 1.7rem;
+}
+.menuItem p {
+        grid-column: 1 / 2;
+        margin: 0;
+}
+.menuItem p:nth-child(1) {
+        font-size: 1.9rem;
+}
+.menuItem p:nth-child(3) {
+        grid-column: 2 / 3;
+        font-size: 1.1rem;
+        margin: 0 0 0 auto;
+        padding-right: 1rem;
+        font-weight:  bold;
+}
+.foodImage {
+        width: 80px;
+        height: 75px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        justify-self: center;
+        align-self: center;
+}
