@@ -23,6 +23,7 @@ let foods = [  // should be changed to an imported array later
         { name: 'Lasagna al forno', price: '14$', allergens:'AGF', foodImage: menuLasagna},
         { name: 'Penne al Arrabiata', price: '17$',  allergens:'AC', foodImage: menuPastAlAr},
         { name: 'Tiramisu', price: '6$', allergens:'AEFH', foodImage: menuTiramisu},
+        /* lemon sorbet, wine, water */
         ];
 
 foods.forEach(food => {
