@@ -3,6 +3,10 @@
         --navBorderColor: rgb(175, 0, 0);
         --headingBackgroundColor: rgb(255, 208, 107);
         --menuItemBackgroundColor: rgb(247, 232, 151);
+
+        /* Spacing */
+        --innerVerticalPadding: 1.5rem;
+        --innerHorizontalPadding: 
 }
 @font-face {
   font-family: "italianCursive";
@@ -51,14 +55,22 @@ nav {
         justify-content: center;
      
 }
-#landerPage, #contactPage {
-        min-width: 230px;
-        max-width: 510px;
+#landerContent, #contactContent {
         background-color: var(--headingBackgroundColor);
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 6px;
+        
+}
+#landerPage, #contactPage, #menuPage {
+       min-width: 230px;
+        max-width: 510px;
+        padding: 2vh;
+        background-color: rgba(128, 0, 21, 0.568);
+        border: 2px solid black;
+        border-radius: 9px;
+        box-shadow: 0px 3px 4px rgb(88, 5, 5);
 }
 .landerHeading, .contactHeading {
         padding-top: 1.5rem;
@@ -69,6 +81,11 @@ nav {
         font-size: 1.9rem;
         font-family: italianMenu;
         width: 70%;
+}
+.landerImage {
+        width: 300px;
+        height: 250px;
+        margin-bottom: 1.5rem;
 }
 .contentHeading {
         background-color: var(--headingBackgroundColor);
